@@ -1,3 +1,30 @@
 body {
+    background-color: rgb(0, 217, 255);
+}
+
+.navbar ul{
+    list-style-type:none;
+    display:inline;
+    margin:0px;
+    padding:0px;
+    overflow:hidden;
+    font-family:sans-serif;
+    font-size:20px;
+}
+
+.navbar a{
     background-color: rgb(255, 255, 255);
+    color:black;
+    display:block;
+    width:150px;
+    padding:10px;
+    text-decoration: none;
+    text-align:center;
+}
+.navbar a:hover{
+    background-color:rgb(255, 255, 255) ;
+    color:aquamarine;
+}
+.navbar li{
+    float:left;
 }
