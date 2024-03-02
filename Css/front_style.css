@@ -58,13 +58,11 @@ body {
 
 #Left_nav {
     position:absolute;
-    padding-top:6px
-
 }
 #Right_nav {
     position: absolute;
-    padding-top: 24px;
-    margin-left:1100px
+    padding-top: 19px;
+    margin-left:900px
 }
 
 #Main_title {
