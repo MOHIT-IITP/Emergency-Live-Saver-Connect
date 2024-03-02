@@ -18,10 +18,10 @@ body {
 #navbar a {
     color: black;
     text-decoration: none;
-    margin-right:60px;
+    margin-right:48px;
     text-align:center;
     font-family:sans-serif;
-    font-size:20px;
+    font-size:24px;
     font-weight:750;
 }
 #top-navbar {
@@ -40,11 +40,12 @@ body {
 
 #top-left-nav {
     position:absolute;
+    padding-top:10px
 }
-
 
 #top-right-nav {
     margin-left:1800px;
+    padding-top:10px;
 }
 
 #navbar a:hover {
@@ -52,16 +53,17 @@ body {
 }
 
 #top-navbar a:hover {
-    color:blue;
+    color:red;
 }
 
 #Left_nav {
     position:absolute;
+    padding-top:6px
 
 }
 #Right_nav {
     position: absolute;
-    padding-top: 20px;
+    padding-top: 24px;
     margin-left:1100px
 }
 
