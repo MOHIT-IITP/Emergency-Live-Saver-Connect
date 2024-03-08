@@ -9,6 +9,7 @@ body {
     background-color: rgb(255, 255, 255);
     background-image:url("../src/background.png");
     background-size:cover;
+    position: relative;
 }
 
 #navbar {
@@ -38,6 +39,7 @@ body {
     font-size:18px;
     font-family:Quicksand;
     font-weight: 600;
+    cursor:pointer;
 }
 
 
@@ -53,6 +55,7 @@ body {
 
 #navbar a:hover {
     color:cyan;
+    transform: scale(1.04);
 }
 
 #top-navbar a:hover {
@@ -73,24 +76,63 @@ body {
 #Main_title {
     color:white;
     margin-top:240px;
-    margin-left:160px;
+    margin-left: -1000px;
     font-size:100px;
     font-weight:1000;
     font-family:Poppins;
-    text-shadow: -10px 4px 4px rgba(0,0,0,0.5)
+    text-shadow: -10px 4px 4px rgba(0,0,0,0.5);
+    animation-name: maintitleanime;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes maintitleanime {
+    0%{
+        position: relative;
+        left:-100px;
+        
+    }
+    100%{
+        position: relative;
+        left:1200px;
+    }
+    
 }
 
 #plus {
     font-size:190px;
     font-weight:1000;
-    text-shadow: 10px 4px 4px rgb(90, 0, 0)
+    text-shadow: 10px 4px 4px rgb(90, 0, 0);
+    animation-name:maintitleanime;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
 
 
-#docimage {
+#doc {
+    position: relative;
+    left:1000px;
+    bottom:500px;
+}
 
-    background-position: right;
-    background-size:cover;
-    padding-left:1300px;
-    padding-bottom: 0px;
+#left_nav_line_bar {
+    background-color: cyan;
+    width:160px;
+    height:5px;
+    position: relative;
+    top:55px;
+    animation-name: lineanime;
+    animation-duration: 2s;
+    animation-delay: 0s;
+}
+
+@keyframes lineanime {
+    0%{
+        width:0;
+    }
+    100%{
+        width:160px;
+    }
+    
 }
