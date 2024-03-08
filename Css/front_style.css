@@ -8,7 +8,8 @@
 body {
     background-color: rgb(255, 255, 255);
     background-image:url("../src/background.png");
-    background-size:cover;
+    background-size:82%;
+    background-repeat:no-repeat;
     position: relative;
 }
 
@@ -54,12 +55,12 @@ body {
 }
 
 #navbar a:hover {
-    color:cyan;
-    transform: scale(1.04);
+    color:white;
+    text-shadow:  1px 1px 2px black, 0 0 25px rgb(0, 255, 255), 0 0 5px rgb(0, 0, 247);;
 }
 
-#top-navbar a:hover {
-    color:red;
+#top-navbar top-left-nav a:hover {
+    color:powderblue;
 }
 
 #Left_nav {
@@ -112,7 +113,7 @@ body {
 
 #doc {
     position: relative;
-    left:1000px;
+    left:1100px;
     bottom:500px;
 }
 
@@ -134,5 +135,7 @@ body {
     100%{
         width:160px;
     }
-    
+}
+#page2img {
+
 }
