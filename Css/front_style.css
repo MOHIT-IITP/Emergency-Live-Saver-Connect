@@ -6,7 +6,11 @@
     margin:0px;
 }
 body {
-    background-color: rgb(255, 255, 255);
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.page1 {
     background-image:url("../src/background.png");
     background-size:82%;
     background-repeat:no-repeat;
@@ -15,7 +19,9 @@ body {
 
 #navbar {
     width:100%;
-    background-color: white;
+    background-image: url("../src/navbar.png");
+    background-position: center;
+    background-size: cover;
     height:70px;
     display:inline-block;
 }
@@ -136,6 +142,8 @@ body {
         width:160px;
     }
 }
-#page2img {
-
+.page2 {
+    background-color: white;
+    position: relative;
+    bottom:509px;
 }
