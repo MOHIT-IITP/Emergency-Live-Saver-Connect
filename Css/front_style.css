@@ -54,8 +54,12 @@ body {
 
 
 #top-left-nav {
-    position:absolute;
-    padding-top:10px
+    position: absolute;
+    top:10px;
+    width:200px;
+    backdrop-filter: blur(10px);
+    border:1.8px #95ffff solid;
+    border-radius:9px;
 }
 
 #top-right-nav {
