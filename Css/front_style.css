@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
 * {
     padding:0px;
     margin:0px;
@@ -10,32 +11,31 @@ body {
     position: relative;
     justify-content: center;
     align-items: center;
+    background: rgb(171,164,246);
+    background: linear-gradient(180deg, rgba(171,164,246,1) 0%, rgba(255,255,255,1) 47%, rgba(171,164,246,1) 100%); 
 }
 .page1 {
-    background-image:url("../src/background.png");
-    background-size:82%;
-    background-repeat:no-repeat;
-    position: relative;
+
 }
 
 #navbar {
     position: relative;
     left:9px;
     width:1900px;
-    height:70px;
-    border:2.5px rgb(167, 220, 255) solid;
+    height:75px;
+    border:3px rgb(167, 220, 255) solid;
     border-radius: 15px;
     display:inline-block;
-    backdrop-filter: blur(10px);
+    background-color: #aba4f6;
 }
 
 #navbar a {
-    color: black;
+    color: rgb(48, 48, 48);
     text-decoration: none;
-    margin-right:48px;
+    margin-right:60px;
     text-align:center;
-    font-family:Nunito;
-    font-size:30px;
+    font-family:Poppins;
+    font-size:25px;
     font-weight:750;
 }
 #top-navbar {
@@ -45,7 +45,7 @@ body {
 }
 
 #top-navbar a{
-    text-decoration:none;
+    text-decoration: none;
     font-size:18px;
     font-family:Quicksand;
     font-weight: 600;
@@ -69,9 +69,8 @@ body {
 
 #navbar a:hover {
     color:white;
-    text-shadow:  1px 1px 2px black, 0 0 25px rgb(0, 255, 255), 0 0 5px rgb(0, 0, 247);;
+    text-shadow: 0px 0px 6px #000;
 }
-
 #top-navbar top-left-nav a:hover {
     color:rgb(255, 255, 255);
 }
@@ -79,23 +78,23 @@ body {
 #Left_nav {
     position:absolute;
     left:20px;
-    text-shadow:4px 4px 5px rgba(0, 102, 255, 0.5);
+    text-shadow:4px 4px 5px rgba(255, 255, 255, 0.5);
 }
 #Right_nav {
     position: absolute;
     padding-top: 19px;
     margin-left:900px;
-    text-shadow:1.5px 1.5px 4px rgba(0, 60, 255, 0.5);
+    /*text-shadow:1.5px 1.5px 4px rgba(0, 60, 255, 0.5);*/
 }
 
 #Main_title {
-    color:white;
+    color:rgb(44, 37, 37);
     margin-top:240px;
     margin-left: 140px;
     font-size:100px;
     font-weight:1000;
     font-family: Dela Gothic One;
-    text-shadow: -10px 4px 4px rgba(0,0,0,0.5);
+    text-shadow: -7px 4px 4px rgba(255, 255, 255, 0.5);
     line-height: 120px;
     animation-name: maintitleanime;
     animation-duration: 1s;
@@ -130,7 +129,7 @@ body {
     width:0px;
     background-color: white;
     position: relative;
-    filter:drop-shadow(0px 0px 5px #0084ff);
+    filter:drop-shadow(0px 0px 5px #bd9bf5);
     top:-30px;
     left:130px;
     text-shadow: 10px,10px,5px,rgba(0, 0, 0, 0.5);
@@ -147,18 +146,101 @@ body {
         width:1000px;
     }
 }
-
+#Slogan1 {
+    position: relative;
+    left:-400px;
+    top:200px;
+    font-size: 20px;
+    font-family: Poppins;
+    text-align: center;
+    color: #292929;
+}
+#Slogan2 {
+    position: relative;
+    text-align: center;
+    left:200px;
+    top:200px;
+    color: #1a1a1a;
+    font-size: 60px;
+    background-color: #d7c7fc;
+    height:200px;
+    width:700px;
+    font-family:Poppins;
+    border:1px rgb(167, 167, 167) solid;
+    border-radius: 35px;
+}
 
 #doc {
     position: relative;
     left:1100px;
-    bottom:500px;
-    filter:drop-shadow(0px 0px 5px rgb(31, 31, 31))
+    bottom:600px;
+    filter:drop-shadow(0px 0px 5px rgb(255, 255, 255))
 }
+
+
+
+
 
 .page2 {
-    background-color: white;
     position: relative;
-    bottom:509px;
+    top:-480px;
+    height:1080px;
+    width:1920px; 
 }
 
+#hosp_pic {
+    height:500px;
+    width:600px;
+    position: relative;
+    left:100px;
+    bottom:-250px;
+    box-shadow: 0px 0px 5px #a17cf8;
+    border:2px #aba4f6 solid;
+    border-radius: 30px;
+} 
+#hosp_pic:hover{
+    animation-name: medi_img_anime;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+#pg2_title {
+    font-size:60px;
+    font-family: Dela Gothic One;
+    position: relative;
+    left:400px;
+    text-align: center;
+    bottom:200px;
+    color:rgb(41, 41, 41);
+}
+
+#medi_img {
+    width:600px;
+    height:400px;
+    position: relative;
+    left:1200px;
+    border:1px #aba4f6 solid;
+    border-radius: 30px;
+    box-shadow: 0px 0px 5px #a17cf8;
+}
+#medi_img:hover {
+    animation-name: medi_img_anime;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes medi_img_anime {
+    0%{
+    }
+    100%{
+        transform: scale(1.15);
+    }
+    
+}
+#medi_title {
+    text-align: center;
+    position: relative;
+    left:-400px;
+    bottom:300px;
+    font-size: 55px;
+    font-family:Dela Gothic One ;
+    color:rgb(20, 20, 20);
+}
