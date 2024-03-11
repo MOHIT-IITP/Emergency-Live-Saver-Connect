@@ -142,7 +142,7 @@ body {
     position: relative;
     left:1100px;
     bottom:500px;
-    filter:drop-shadow(5px,5px,3px,rgba(0,0,0,0.5));
+    box-shadow:(5px,5px,3px,#000);
 }
 
 #left_nav_line_bar {
@@ -170,6 +170,6 @@ body {
     bottom:509px;
 }
 
-#doc2 {
-    filter: drop-shadow(10px,10px,10px,rgba(0,0,0,0.5));
+.doc2 {
+    box-shadow: 5px,5px,10px,#333;
 }
