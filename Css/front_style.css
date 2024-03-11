@@ -84,10 +84,11 @@ body {
     color:white;
     margin-top:240px;
     margin-left: -1000px;
-    font-size:100px;
+    font-size:110px;
     font-weight:1000;
     font-family:Poppins;
     text-shadow: -10px 4px 4px rgba(0,0,0,0.5);
+    line-height: 120px;
     animation-name: maintitleanime;
     animation-duration: 2s;
     animation-delay: 1s;
@@ -96,13 +97,36 @@ body {
 @keyframes maintitleanime {
     0%{
         position: relative;
-        left:-100px;
+        left:-300px;
         
     }
     100%{
         position: relative;
-        left:1200px;
+        left:1100px;
     }
+    
+}
+#mainlineanime {
+    height:8px;
+    width:0px;
+    background-color: white;
+    position: relative;
+    top:-30px;
+    left:190px;
+    text-shadow: 10px,10px,5px,rgba(0, 0, 0, 0.5);
+    animation-name: mainlineanimeAnimation;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes mainlineanimeAnimation {
+    0%{
+        width:0px;
+    }
+    100%{
+        width:1000px;
+    }
+    
     
 }
 
@@ -121,6 +145,7 @@ body {
     position: relative;
     left:1100px;
     bottom:500px;
+    filter:drop-shadow(5px,5px,3px,rgba(0,0,0,0.5));
 }
 
 #left_nav_line_bar {
@@ -146,4 +171,8 @@ body {
     background-color: white;
     position: relative;
     bottom:509px;
+}
+
+#doc2 {
+    filter: drop-shadow(10px,10px,10px,rgba(0,0,0,0.5));
 }
