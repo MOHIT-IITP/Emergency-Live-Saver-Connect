@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
 * {
     padding:0px;
     margin:0px;
@@ -83,10 +84,10 @@ body {
 #Main_title {
     color:white;
     margin-top:240px;
-    margin-left: -1000px;
-    font-size:110px;
+    margin-left: -3000px;
+    font-size:100px;
     font-weight:1000;
-    font-family:Poppins;
+    font-family: Dela Gothic One;
     text-shadow: -10px 4px 4px rgba(0,0,0,0.5);
     line-height: 120px;
     animation-name: maintitleanime;
@@ -97,14 +98,13 @@ body {
 @keyframes maintitleanime {
     0%{
         position: relative;
-        left:-300px;
+        left:-1000px;
         
     }
     100%{
         position: relative;
-        left:1100px;
+        left:3130px;
     }
-    
 }
 #mainlineanime {
     height:8px;
@@ -112,7 +112,7 @@ body {
     background-color: white;
     position: relative;
     top:-30px;
-    left:190px;
+    left:130px;
     text-shadow: 10px,10px,5px,rgba(0, 0, 0, 0.5);
     animation-name: mainlineanimeAnimation;
     animation-duration: 1s;
@@ -124,12 +124,9 @@ body {
         width:0px;
     }
     100%{
-        width:1000px;
+        width:1100px;
     }
-    
-    
 }
-
 #plus {
     font-size:190px;
     font-weight:1000;
