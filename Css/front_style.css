@@ -19,7 +19,9 @@ body {
 }
 
 #navbar {
-    width:100%;
+    position: relative;
+    left:9px;
+    width:1900px;
     height:70px;
     border:2.5px rgb(167, 220, 255) solid;
     border-radius: 15px;
@@ -100,7 +102,7 @@ body {
 #plus {
     font-size:190px;
     font-weight:1000;
-    text-shadow: 0px 0px 5px rgb(133, 0, 0);
+    text-shadow: 0px 0px 15px rgb(255, 0, 0);
     animation-name:maintitleanime;
     animation-delay: 0s;
     animation-duration: 1s;
