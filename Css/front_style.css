@@ -20,11 +20,11 @@ body {
 
 #navbar {
     width:100%;
-    background-image: url("../src/navbar.png");
-    background-position: center;
-    background-size: cover;
     height:70px;
+    border:2.5px rgb(167, 220, 255) solid;
+    border-radius: 15px;
     display:inline-block;
+    backdrop-filter: blur(10px);
 }
 
 #navbar a {
@@ -67,7 +67,7 @@ body {
 }
 
 #top-navbar top-left-nav a:hover {
-    color:powderblue;
+    color:rgb(255, 255, 255);
 }
 
 #Left_nav {
@@ -84,26 +84,38 @@ body {
 #Main_title {
     color:white;
     margin-top:240px;
-    margin-left: -3000px;
+    margin-left: 140px;
     font-size:100px;
     font-weight:1000;
     font-family: Dela Gothic One;
     text-shadow: -10px 4px 4px rgba(0,0,0,0.5);
     line-height: 120px;
     animation-name: maintitleanime;
-    animation-duration: 2s;
-    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-delay: 0s;
     animation-fill-mode: forwards;
 }
+
+#plus {
+    font-size:190px;
+    font-weight:1000;
+    text-shadow: 0px 0px 5px rgb(133, 0, 0);
+    animation-name:maintitleanime;
+    animation-delay: 0s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
 @keyframes maintitleanime {
     0%{
         position: relative;
-        left:-1000px;
-        
+        top:-20px;
+        opacity: 0%;
+        transform:scale(0.5);
     }
     100%{
-        position: relative;
-        left:3130px;
+        top:20px;
+        opacity: 100%;
     }
 }
 #mainlineanime {
@@ -111,12 +123,13 @@ body {
     width:0px;
     background-color: white;
     position: relative;
+    filter:drop-shadow(0px 0px 5px #0084ff);
     top:-30px;
     left:130px;
     text-shadow: 10px,10px,5px,rgba(0, 0, 0, 0.5);
     animation-name: mainlineanimeAnimation;
     animation-duration: 1s;
-    animation-delay: 3s;
+    animation-delay: 0s;
     animation-fill-mode: forwards;
 }
 @keyframes mainlineanimeAnimation {
@@ -124,17 +137,8 @@ body {
         width:0px;
     }
     100%{
-        width:1100px;
+        width:1000px;
     }
-}
-#plus {
-    font-size:190px;
-    font-weight:1000;
-    text-shadow: 10px 4px 4px rgb(90, 0, 0);
-    animation-name:maintitleanime;
-    animation-delay: 1s;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
 }
 
 
@@ -142,34 +146,12 @@ body {
     position: relative;
     left:1100px;
     bottom:500px;
-    box-shadow:(5px,5px,3px,#000);
+    filter:drop-shadow(0px 0px 5px rgb(31, 31, 31))
 }
 
-#left_nav_line_bar {
-    background-color: cyan;
-    width:160px;
-    height:5px;
-    position: relative;
-    top:55px;
-    animation-name: lineanime;
-    animation-duration: 2s;
-    animation-delay: 0s;
-}
-
-@keyframes lineanime {
-    0%{
-        width:0;
-    }
-    100%{
-        width:160px;
-    }
-}
 .page2 {
     background-color: white;
     position: relative;
     bottom:509px;
 }
 
-.doc2 {
-    box-shadow: 5px,5px,10px,#333;
-}
