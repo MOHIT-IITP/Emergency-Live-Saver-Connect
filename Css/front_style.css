@@ -25,8 +25,8 @@ body {
     height:75px;
     border:3px rgb(167, 220, 255) solid;
     border-radius: 15px;
-    display:inline-block;
-    background-color: #aba4f6;
+    display: inline-block;
+    background-color: #a59dfd;
 }
 
 #navbar a {
