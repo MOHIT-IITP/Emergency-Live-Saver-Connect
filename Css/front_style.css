@@ -195,7 +195,7 @@ body {
     bottom:-250px;
     box-shadow: -10px 10px 10px #000000;
     border:1px #424242 solid;
-    border-radius: 30px;
+    border-radius: 50px;
     transition: transform 0.5s ease;
 } 
 #hosp_pic:hover{
@@ -217,7 +217,7 @@ body {
     position: relative;
     left:1200px;
     border:1px #575757 solid;
-    border-radius: 30px;
+    border-radius: 50px;
     box-shadow: 10px 10px 10px #000000;
     transition:transform 0.5s ease ;
 }
@@ -239,7 +239,7 @@ body {
     height:400px;
     width:600px;
     border:1px rgb(54, 54, 54) solid;
-    border-radius: 30px;
+    border-radius: 50px;
     position: relative;
     left:100px;
     transition: transform 0.5s ease;
