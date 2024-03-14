@@ -176,6 +176,10 @@ body {
     left:1100px;
     bottom:700px;
     filter:drop-shadow(20px 10px 10px rgb(75, 75, 75));
+    transition: transform 0.3s ease;
+}
+#doc:hover {
+    transform:scale(1.05);
 }
 
 
@@ -198,11 +202,14 @@ body {
     box-shadow: -10px 10px 10px #000000;
     border:1px #424242 solid;
     border-radius: 30px;
+    background: url(../src/hosp_pic.jpg);
+    background-position: center;
+    background-size:117%;
     transition: all 0.5s ease;
 } 
 #hosp_pic:hover{
-    transform: scale(1.15);
     border-radius: 50px;
+    background-size:130%;
 }
 #pg2_title {
     font-size:60px;
@@ -217,6 +224,7 @@ body {
     width:300px;
     height:95px;
     background-color: #c1aaff;
+    color:salmon;
     position: relative;
     left:123vmin;
     bottom:200px;
@@ -246,10 +254,13 @@ body {
     border-radius: 30px;
     box-shadow: 10px 10px 10px #000000;
     transition:all 0.5s ease ;
+    background:url(../src/medicine.jpg);
+    background-size: 100%;
+    background-position: center;
 }
 #medi_img:hover {
-    transform:scale(1.15);
     border-radius: 50px;
+    background-size: 120%;
 }
 #medi_title {
     text-align: center;
@@ -270,10 +281,13 @@ body {
     left:100px;
     transition: all 0.5s ease;
     box-shadow: -10px 10px 10px #000000;
+    background: url("../src/ai.jpg");
+    background-size: 100%;
+    background-position: center;
 }
 #ai_img:hover {
     border-radius: 50px;
-    transform: scale(1.15);
+    background-size: 120%;
 }
 
 #ai_title {
