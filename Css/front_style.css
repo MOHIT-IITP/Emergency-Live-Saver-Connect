@@ -70,7 +70,9 @@ body {
 #navbar a:hover {
     color:white;
     text-shadow: 0px 0px 6px #000000;
+    transition: all 0.5s ease;
 }
+
 #top-navbar top-left-nav a:hover {
     color:rgb(255, 255, 255);
 }
@@ -195,11 +197,12 @@ body {
     bottom:-250px;
     box-shadow: -10px 10px 10px #000000;
     border:1px #424242 solid;
-    border-radius: 50px;
-    transition: transform 0.5s ease;
+    border-radius: 30px;
+    transition: all 0.5s ease;
 } 
 #hosp_pic:hover{
     transform: scale(1.15);
+    border-radius: 50px;
 }
 #pg2_title {
     font-size:60px;
@@ -210,20 +213,43 @@ body {
     bottom:200px;
     color:rgb(41, 41, 41);
 }
+.button01 {
+    width:300px;
+    height:95px;
+    background-color: #c1aaff;
+    position: relative;
+    left:123vmin;
+    bottom:200px;
+    border-radius: 40px;
+    transition: all 0.3s ease-in;
+    font-family:Dela Gothic One;
+    font-size:25px;
+}
+.button01 a {
+    text-decoration: none;
+    position: relative;
+    top:27px;
+    left:50px;
+}
+.button01:hover{
+    border-radius: 50px;
+    width:100px;
+}
 
 #medi_img {
     width:600px;
     height:400px;
+    cursor:pointer;
     position: relative;
     left:1200px;
     border:1px #575757 solid;
-    border-radius: 50px;
+    border-radius: 30px;
     box-shadow: 10px 10px 10px #000000;
-    transition:transform 0.5s ease ;
+    transition:all 0.5s ease ;
 }
 #medi_img:hover {
     transform:scale(1.15);
-    
+    border-radius: 50px;
 }
 #medi_title {
     text-align: center;
@@ -239,13 +265,14 @@ body {
     height:400px;
     width:600px;
     border:1px rgb(54, 54, 54) solid;
-    border-radius: 50px;
+    border-radius: 30px;
     position: relative;
     left:100px;
-    transition: transform 0.5s ease;
+    transition: all 0.5s ease;
     box-shadow: -10px 10px 10px #000000;
 }
 #ai_img:hover {
+    border-radius: 50px;
     transform: scale(1.15);
 }
 
@@ -257,4 +284,48 @@ body {
     left:300px;
     bottom:300px;
     color:#111111;
+}
+.button02 {
+    width:300px;
+    height:95px;
+    background-color: #a787ff;
+    position: relative;
+    left:40vmin;
+    bottom:300px;
+    border-radius: 40px;
+    transition: all 0.3s ease-in;
+    font-family:Dela Gothic One;
+    font-size:25px;
+}
+.button02 a {
+    text-decoration: none;
+    position: relative;
+    top:27px;
+    left:50px;
+}
+.button02:hover{
+    border-radius: 50px;
+    width:100px;
+}
+.button03 {
+    width:150px;
+    height:95px;
+    background-color: #c1aaff;
+    position: relative;
+    left:117vmin;
+    bottom:250px;
+    border-radius: 40px;
+    transition: all 0.2s ease-in;
+    font-family:Dela Gothic One;
+    font-size:25px;
+}
+.button03 a {
+    text-decoration: none;
+    position: relative;
+    top:27px;
+    left:50px;
+}
+.button03:hover{
+    border-radius: 50px;
+    width:94px;
 }
