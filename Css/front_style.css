@@ -242,6 +242,7 @@ body {
 .button01:hover{
     border-radius: 50px;
     width:100px;
+    background-color: #865aff;
 }
 
 #medi_img {
@@ -320,11 +321,12 @@ body {
 .button02:hover{
     border-radius: 50px;
     width:100px;
+    background-color: #865aff;
 }
 .button03 {
     width:150px;
     height:95px;
-    background-color: #c1aaff;
+    background-color: #c6b2ff;
     position: relative;
     left:117vmin;
     bottom:250px;
@@ -342,4 +344,5 @@ body {
 .button03:hover{
     border-radius: 50px;
     width:94px;
+    background-color: #865aff;
 }
