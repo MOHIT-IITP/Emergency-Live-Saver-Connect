@@ -21,8 +21,8 @@ body {
 #navbar {
     position: relative;
     left:9px;
-    width:1900px;
-    height:75px;
+    width:100%;
+    height:8vh;
     border:3px rgb(167, 220, 255) solid;
     border-radius: 15px;
     display: inline-block;
@@ -56,7 +56,7 @@ body {
 #top-left-nav {
     position: absolute;
     top:10px;
-    width:200px;
+    width:20vw;
     backdrop-filter: blur(10px);
     border:1.8px #95ffff solid;
     border-radius:9px;
@@ -79,6 +79,8 @@ body {
 
 #Left_nav {
     position:absolute;
+    height:9vh;
+    width:12vw;
     left:20px;
 }
 #Right_nav {
@@ -182,10 +184,6 @@ body {
     transform:scale(1.05);
 }
 
-
-
-
-
 .page2 {
     position: relative;
     top:-480px;
@@ -194,7 +192,7 @@ body {
 }
 
 #hosp_pic {
-    height:500px;
+    height:50.25vh;
     width:600px;
     position: relative;
     left:100px;
@@ -244,7 +242,13 @@ body {
     width:100px;
     background-color: #865aff;
 }
+#button01bg {
+    width:300px;
+    height:95px;
+    background-color: #8528ff;
+    position: relative;
 
+}
 #medi_img {
     width:600px;
     height:400px;
@@ -301,9 +305,9 @@ body {
     color:#111111;
 }
 .button02 {
-    width:300px;
+    width:100px;
     height:95px;
-    background-color: #a787ff;
+    background-color: #8528ff;
     position: relative;
     left:40vmin;
     bottom:300px;
@@ -315,13 +319,25 @@ body {
 .button02 a {
     text-decoration: none;
     position: relative;
-    top:27px;
     left:50px;
+    top:-70px;
+    color:white;
+    transition: all 0.3s ease-in;
+}
+.button02:hover a {
+    color:black;
 }
 .button02:hover{
-    border-radius: 50px;
-    width:100px;
-    background-color: #865aff;
+    width:300px;
+    background-color: #9679ff;
+}
+#button02bg {
+    height:95px;
+    width:300px;
+    background-color: #8528ff;
+    border-radius: 40px;
+    position: relative;
+    z-index: -900;
 }
 .button03 {
     width:150px;
