@@ -20,7 +20,7 @@ body {
 #navbar {
     position: relative;
     left:9px;
-    width:100%;
+    width:98vw;
     height:8vh;
     border:3px rgb(167, 220, 255) solid;
     border-radius: 15px;
@@ -29,6 +29,8 @@ body {
 }
 
 #navbar a {
+    height:9vh;
+    width:100%;
     color: rgb(48, 48, 48);
     text-decoration: none;
     margin-right:60px;
