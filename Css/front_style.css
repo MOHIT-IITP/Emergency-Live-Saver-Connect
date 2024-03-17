@@ -101,6 +101,7 @@ body {
     padding: 40px;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-content:center;
 }
 
 .mainright {
@@ -175,20 +176,43 @@ body {
 
 .page2 {
     display: flex;
+    justify-content: space-between;
+    margin:30px;
+    flex-wrap: wrap;
+    align-content:center ;
 }
+
 
 .page2left {
     display: flex;
+    border:2px blue solid;
+    padding: 30px;
+    padding-left:100px;
 }
-
 .page2right {
     display: flex;
+    border:2px blue solid;
+    padding: 40px;
+    padding-right: 160px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.page2right h1{
+    font-size: 80px;
+    font-family: Dela Gothic One;
 }
 .page2box {
     display: flex;
-    height:20vh;
-    width:20vw;
+    height:40vh;
+    width:30vw;
     background-color: beige;
-    border:2px blue solid;
     align-items: center;
+    border-radius: 40px;
+    border:3px #988eff solid;
+    filter:drop-shadow(5px 5px 10px #000);
+    background:url(../src/hosp_pic.jpg);
+    background-size: 120%;
+    background-position: center;
 }
