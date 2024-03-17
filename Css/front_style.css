@@ -13,13 +13,6 @@ body {
     background: rgb(171,164,246);
     background: linear-gradient(180deg, rgba(171,164,246,1) 0%, rgba(255,255,255,1) 47%, rgba(171,164,246,1) 100%); 
 }
-.page1 {
-    width: 100%;
-    height: auto;
-}
-
-
-
 
 
 /*  Top Navbar */
@@ -58,6 +51,7 @@ body {
     border:3px #b0e9ff solid;
     display: flex;
     flex-wrap: wrap;
+    align-content: flex-end;
     justify-content: space-between;
 }
 
@@ -95,17 +89,23 @@ body {
 }
 .main {
     width: 100%;
-    height: 100vh;
+    height: auto;
     display: flex;
     margin: 30px;;
     padding: 40px;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-content:center;
+    align-content:flex-start;
 }
 
-.mainright {
-    height:100vh;
+.mainright{
+    display: flex;
+    border:3px blue solid;
+    justify-content: center;
+    align-items: center;
+}
+.doc {
+    height:65vh;
     width:40vw;
     display: flex;
     filter:drop-shadow(20px 10px 10px rgb(75, 75, 75));
@@ -115,10 +115,9 @@ body {
     background:url("../src/doc_img.png");
     background-position: center;
     background-size: 92%;
-    border: 2px blue solid;
     background-repeat: no-repeat;
 }
-.mainright:hover {
+.doc:hover {
     transform:scale(1.05);
 }
 
@@ -126,14 +125,14 @@ body {
 
     display: flex;
     justify-content: center;
+    border:3px blue solid;
     align-items: center;
     flex-direction: column;
-    border:3px blue solid;
 }
 
 .Main_title {
     color:rgb(44, 37, 37);
-    font-size:650%;
+    font-size:6rem;
     font-weight:900;
     font-family: Dela Gothic One;
     text-shadow: -7px 4px 4px rgba(255, 255, 255, 0.5);
@@ -185,15 +184,15 @@ body {
 
 .page2left {
     display: flex;
-    border:2px blue solid;
     padding: 30px;
+    border:3px blue solid;
     padding-left:100px;
 }
 .page2right {
     display: flex;
-    border:2px blue solid;
     padding: 40px;
     padding-right: 160px;
+    border:3px blue solid;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -214,8 +213,12 @@ body {
     border:3px #988eff solid;
     filter:drop-shadow(5px 5px 10px #000);
     background:url(../src/hosp_pic.jpg);
-    background-size: 120%;
+    background-size: cover;
     background-position: center;
+    transition: all 0.3s ease;
+}
+.page2box:hover {
+    background-size:150%;
 }
 
 .page3 {
@@ -228,15 +231,15 @@ body {
 }
 .page3left {
     display: flex;
-    border: 3px blue solid;
     text-align: center;
+    border:3px blue solid;
     align-items: center;
     padding-left: 40px;
 }
 .page3right {
     display: flex;
     padding:30px;
-    border: 3px blue solid;
+    border:3px blue solid;
     padding-right: 90px;
 }
 .page3box {
@@ -245,13 +248,53 @@ body {
     background-color: #000;
     border:3px #988eff solid;
     border-radius: 40px;
+    filter:drop-shadow(5px 5px 10px #000);
     background:url("../src/medicine.jpg");
-    background-size: 110%;
+    background-size: cover;
     background-position: center;
 }
 .page3left h1 {
-    font-size: 5rem;
+    font-size: 5em;
     font-family: Dela Gothic One;
     color:#1b1b1b;
 }
 
+.page4 {
+    display: flex;
+    margin:40px;
+    align-content: center;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+.page4left {
+    display: flex;
+    border:3px blue solid;
+}
+
+.page4right {
+    display: flex;
+    border:3px blue solid;
+    text-align: center;
+    padding-right: 100px;
+}
+
+.page4box {
+    height:40vh;
+    width:30vw;
+    background-color: #000;
+    border-radius: 40px;;
+    background:url(../src/ai.jpg);
+    border:3px #988eff solid;
+    background-size:cover ;
+    transition:all 0.3s ease;
+    filter:drop-shadow(5px 5px 10px #000);
+}
+.page4box:hover {
+    transform: scale(1.1);
+}
+
+.page4right h1 {
+    font-size: 4.5rem;
+    font-family: Dela Gothic One;
+}
