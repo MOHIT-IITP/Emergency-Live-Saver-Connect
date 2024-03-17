@@ -103,9 +103,9 @@ body {
     justify-content: space-between;
 }
 
-.doc {
+.mainright {
     height:100vh;
-    width:50vw;
+    width:40vw;
     display: flex;
     filter:drop-shadow(20px 10px 10px rgb(75, 75, 75));
     transition: transform 0.3s ease;
@@ -113,10 +113,11 @@ body {
     align-items: center;
     background:url("../src/doc_img.png");
     background-position: center;
-    background-size: 80%;
+    background-size: 92%;
+    border: 2px blue solid;
     background-repeat: no-repeat;
 }
-.doc:hover {
+.mainright:hover {
     transform:scale(1.05);
 }
 
@@ -126,15 +127,16 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border:3px blue solid;
 }
 
 .Main_title {
     color:rgb(44, 37, 37);
-    font-size:100px;
+    font-size:650%;
     font-weight:900;
     font-family: Dela Gothic One;
     text-shadow: -7px 4px 4px rgba(255, 255, 255, 0.5);
-    line-height: 120px;
+    line-height: 150px;
     padding-left: 70px;
     animation-name: maintitleanime;
     animation-duration: 1s;
@@ -163,191 +165,30 @@ body {
 }
 .Slogan2 {
     color: #1a1a1a;
-    font-size: 70px;
-    padding: 10px;
+    font-size: 50px;
+    padding: 20px;
     background-color: #d7c7fc;
     font-family:Poppins;
     border:1px rgb(167, 167, 167) solid;
     border-radius: 35px;
 }
 
-
 .page2 {
-    position: relative;
-    top:-480px;
-    height:1080px;
-    width:1920px; 
+    display: flex;
 }
 
-#hosp_pic {
-    height:50.25vh;
-    width:600px;
-    position: relative;
-    left:100px;
-    bottom:-250px;
-    box-shadow: -10px 10px 10px #000000;
-    border:1px #424242 solid;
-    border-radius: 30px;
-    background: url(../src/hosp_pic.jpg);
-    background-position: center;
-    background-size:117%;
-    transition: all 0.5s ease;
-} 
-#hosp_pic:hover{
-    border-radius: 50px;
-    background-size:130%;
-}
-#pg2_title {
-    font-size:60px;
-    font-family: Dela Gothic One;
-    position: relative;
-    left:400px;
-    text-align: center;
-    bottom:200px;
-    color:rgb(41, 41, 41);
-}
-.button01 {
-    width:300px;
-    height:95px;
-    background-color: #c1aaff;
-    color:salmon;
-    position: relative;
-    left:123vmin;
-    bottom:200px;
-    border-radius: 40px;
-    transition: all 0.3s ease-in;
-    font-family:Dela Gothic One;
-    font-size:25px;
-}
-.button01 a {
-    text-decoration: none;
-    position: relative;
-    top:27px;
-    left:50px;
-}
-.button01:hover{
-    border-radius: 50px;
-    width:100px;
-    background-color: #865aff;
-}
-#button01bg {
-    width:300px;
-    height:95px;
-    background-color: #8528ff;
-    position: relative;
-
-}
-#medi_img {
-    width:600px;
-    height:400px;
-    cursor:pointer;
-    position: relative;
-    left:1200px;
-    border:1px #575757 solid;
-    border-radius: 30px;
-    box-shadow: 10px 10px 10px #000000;
-    transition:all 0.5s ease ;
-    background:url(../src/medicine.jpg);
-    background-size: 100%;
-    background-position: center;
-}
-#medi_img:hover {
-    border-radius: 50px;
-    background-size: 120%;
-}
-#medi_title {
-    text-align: center;
-    position: relative;
-    left:-400px;
-    bottom:300px;
-    font-size: 55px;
-    font-family:Dela Gothic One ;
-    color:rgb(20, 20, 20);
+.page2left {
+    display: flex;
 }
 
-#ai_img {
-    height:400px;
-    width:600px;
-    border:1px rgb(54, 54, 54) solid;
-    border-radius: 30px;
-    position: relative;
-    left:100px;
-    transition: all 0.5s ease;
-    box-shadow: -10px 10px 10px #000000;
-    background: url("../src/ai.jpg");
-    background-size: 100%;
-    background-position: center;
+.page2right {
+    display: flex;
 }
-#ai_img:hover {
-    border-radius: 50px;
-    background-size: 120%;
-}
-
-#ai_title {
-    font-size:60px;
-    font-family: Dela Gothic One;
-    position: relative;
-    text-align: center;
-    left:300px;
-    bottom:300px;
-    color:#111111;
-}
-.button02 {
-    width:100px;
-    height:95px;
-    background-color: #8528ff;
-    position: relative;
-    left:40vmin;
-    bottom:300px;
-    border-radius: 40px;
-    transition: all 0.3s ease-in;
-    font-family:Dela Gothic One;
-    font-size:25px;
-}
-.button02 a {
-    text-decoration: none;
-    position: relative;
-    left:50px;
-    top:-70px;
-    color:white;
-    transition: all 0.3s ease-in;
-}
-.button02:hover a {
-    color:black;
-}
-.button02:hover{
-    width:300px;
-    background-color: #9679ff;
-}
-#button02bg {
-    height:95px;
-    width:300px;
-    background-color: #8528ff;
-    border-radius: 40px;
-    position: relative;
-    z-index: -900;
-}
-.button03 {
-    width:150px;
-    height:95px;
-    background-color: #c6b2ff;
-    position: relative;
-    left:117vmin;
-    bottom:250px;
-    border-radius: 40px;
-    transition: all 0.2s ease-in;
-    font-family:Dela Gothic One;
-    font-size:25px;
-}
-.button03 a {
-    text-decoration: none;
-    position: relative;
-    top:27px;
-    left:50px;
-    transition: all 0.2s ease-in;
-}
-.button03:hover {
-    border-radius: 50px;
-    width:94px;
-    background-color: #865aff;
+.page2box {
+    display: flex;
+    height:20vh;
+    width:20vw;
+    background-color: beige;
+    border:2px blue solid;
+    align-items: center;
 }
