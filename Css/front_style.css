@@ -129,11 +129,11 @@ body {
 }
 
 .Main_title {
-    color:rgb(44, 37, 37);
+    color:rgb(255, 255, 255);
     font-size:6rem;
     font-weight:900;
     font-family: Dela Gothic One;
-    text-shadow: -7px 4px 4px rgba(255, 255, 255, 0.5);
+    text-shadow: 7px 4px 0px rgb(68, 68, 68);
     line-height: 150px;
     padding-left: 70px;
     animation-name: maintitleanime;
@@ -162,7 +162,8 @@ body {
     padding-top: 90px;
 }
 .Slogan2 {
-    color: #1a1a1a;
+    color: #ffffff;
+    text-shadow: 3px 3px 0px #3d3d3d;
     font-size: 50px;
     padding: 20px;
     background-color: #d7c7fc;
@@ -205,7 +206,7 @@ body {
     align-items: center;
     border-radius: 40px;
     border:3px #988eff solid;
-    filter:drop-shadow(5px 5px 10px #000);
+    filter:drop-shadow(10px 10px 10px #000);
     background:url(../src/hosp_pic.jpg);
     background-size: 150%;
     background-position: center;
@@ -238,7 +239,7 @@ body {
     background-color: #000;
     border:3px #988eff solid;
     border-radius: 40px;
-    filter:drop-shadow(5px 5px 10px #000);
+    filter:drop-shadow(10px 10px 10px #000);
     background:url("../src/medicine.jpg");
     background-size: 150%;
     background-position: center;
@@ -282,7 +283,7 @@ body {
     background-size:150% ;
     background-position: center;
     transition:all 0.3s ease;
-    filter:drop-shadow(5px 5px 10px #000);
+    filter:drop-shadow(10px 10px 10px #000);
 }
 .page4box:hover {
     background-size: 200%;
