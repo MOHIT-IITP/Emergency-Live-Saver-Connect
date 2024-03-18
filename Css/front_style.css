@@ -291,6 +291,7 @@ body {
 .page4right h1 {
     font-size: 4.5rem;
     font-family: Dela Gothic One;
+    line-height: 80px;
 }
 
 .page2btn {
@@ -338,6 +339,7 @@ body {
 }
 
 .page3btn {
+    padding-top: 40px;
 }
 
 .page3btntitle a{
@@ -382,7 +384,8 @@ body {
     z-index: -99;
 }
 .page4btn {
-    padding-left: 140px;
+    padding-left: 150px;
+    padding-top: 60px;
 }
 
 .page4btntitle a{
@@ -391,6 +394,7 @@ body {
     position: relative;
     top:5px;
     left:16px;
+
 }
 .page4btntitle {
     text-decoration: none;
