@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 * {
     padding:0px;
     margin:0px;
@@ -30,10 +31,20 @@ body {
     display: flex;
     flex-shrink: 1;
     justify-content: flex-start;
+    font-family: Jost;
+    font-weight: 700;
+}
+#top-left-nav a{
+    text-decoration: none;
+}
+#top-right-nav a{
+    text-decoration: none;
 }
 
 #top-right-nav {
     display: flex;
+    font-family: Jost;
+    font-weight: 700;
     flex-shrink:1;
 }
 
@@ -47,8 +58,6 @@ body {
     padding: 5px;
     align-items: center;
     border-radius: 15px;
-    background-color: #a39aff;
-    border:3px #b0e9ff solid;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-end;
@@ -73,9 +82,9 @@ body {
 }
 .Right_nav a{
     font-size: 24px;
-    font-weight:500;
-    font-family:Poppins;
-    color: rgb(48, 48, 48);
+    font-weight:700;
+    font-family:Jost;
+    color: rgb(34, 34, 34);
 }
 .navbar a {
     text-decoration: none;
@@ -84,8 +93,7 @@ body {
 
 .navbar a:hover {
     color:white;
-    text-shadow: 0px 0px 6px #000000;
-    transform: scale(1.1);
+    text-shadow: 3px 3px 0px #5100d3;
 }
 .main {
     width: 100%;
@@ -130,12 +138,13 @@ body {
 
 .Main_title {
     color:rgb(255, 255, 255);
-    font-size:6rem;
+    font-size:5.5rem;
     font-weight:900;
     font-family: Dela Gothic One;
     text-shadow: 7px 4px 0px rgb(68, 68, 68);
-    line-height: 150px;
+    line-height: 125px;
     padding-left: 70px;
+    letter-spacing: 0.5rem;
     animation-name: maintitleanime;
     animation-duration: 1s;
     animation-delay: 0s;
@@ -197,7 +206,9 @@ body {
 .page2right h1{
     font-size: 4.5rem;
     font-family: Dela Gothic One;
+    color:#303030
 }
+
 .page2box {
     display: flex;
     height:400px;
@@ -271,6 +282,7 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
+    color: #242424;
 }
 
 .page4box {
