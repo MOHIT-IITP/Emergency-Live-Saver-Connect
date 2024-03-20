@@ -19,6 +19,8 @@ body{
     backdrop-filter: blur(25px);
     border-radius: 40px;
     font-family: Lexend;
+    height: 700px;
+    width:auto;
 }
 .main h1{
     font-size:70px;
@@ -76,21 +78,27 @@ body{
 .forget {
     display: flex;
     padding-bottom: 40px;
-    padding-top: 20px;
+    padding-top: 120px;
     justify-content: center;
 }
 .guest{
     display: flex;
     justify-content: center;
+    position: relative;
+    bottom:170px;
     padding-left:20px;
     padding-right:20px;
 }
-.guest button{
-    font-family: Lexend;
-    font-weight: 500;
-    font-size: 20px;
+.guest a{
     height:70px;
     width:100%;
+}
+.guest button{
+    font-family: Lexend;
+    height:70px;
+    width:100%;
+    font-weight: 500;
+    font-size: 20px;
     border-radius: 40px;
     border:3px solid rgb(205, 182, 248);
     background-color: white;
