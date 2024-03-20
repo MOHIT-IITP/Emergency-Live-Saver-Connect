@@ -16,45 +16,22 @@ body {
 }
 
 
-/*  Top Navbar */
-.top-navbar {
-    width:98%;
-    height:3vh;
-    display: flex;
-    padding-bottom: 30px;
-    padding: 10px;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-#top-left-nav {
-    display: flex;
-    flex-shrink: 1;
-    justify-content: flex-start;
-    font-family: Jost;
-    font-weight: 700;
-}
-#top-left-nav a{
-    text-decoration: none;
-}
-#top-right-nav a{
-    text-decoration: none;
-}
-
-#top-right-nav {
-    display: flex;
-    font-family: Jost;
-    font-weight: 700;
-    flex-shrink:1;
-}
-
-
 
 /*The Main Navbar */
+.parentnav {
+    position: fixed;
+    display: flex;
+    backdrop-filter: blur(10px);
+    z-index: 99;
+    top:0;
+    padding-top: 30px;
+}
 .navbar {
     width:98vw;
     height:auto;
-    margin: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
     padding: 5px;
     align-items: center;
     border-radius: 15px;
@@ -63,6 +40,7 @@ body {
     align-content: flex-end;
     justify-content: space-between;
     background-color: #948bff;
+    border:3px solid #8a80ff;
 }
 
 .Left_nav {
@@ -104,6 +82,7 @@ body {
     display: flex;
     margin: 30px;;
     padding: 40px;
+    margin-top: 100px;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content:baseline;
@@ -176,7 +155,7 @@ body {
 }
 .Slogan2 {
     color: #ffffff;
-    text-shadow: 3px 3px 0px #3d3d3d;
+    text-shadow: 3px 3px 0px #2f006d;
     font-size: 50px;
     padding: 20px;
     text-align: center;
