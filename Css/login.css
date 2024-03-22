@@ -12,7 +12,6 @@ body{
     background: url(../src/login1.jpg);
     background-size:120%;
 }
-
 .main {
     border: 3px solid rgb(215, 191, 253);
     backdrop-filter: blur(25px);
