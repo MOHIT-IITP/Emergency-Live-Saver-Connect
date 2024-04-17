@@ -46,13 +46,13 @@ var tl2 = gsap.timeline({scrollTrigger:{
 tl2.to(".page1right img",{
   transform:"none",
   // scaleX:"-1",
-  top:"210%",
+  top:"200%",
   left:"50%",
 },"page2");
 
 tl2.to(".circle",{
   top:"225%",
-  left:"55%",
+  left:"57%",
   rotate:"0deg",
 },"page2");
 
@@ -66,13 +66,13 @@ var tl3 = gsap.timeline({scrollTrigger:{
 
 tl3.to(".page1right img",{
   scaleX:"-1",
-  top:"310%",
+  top:"300%",
   left:"7%",
 },"page3");
 
 tl3.to(".circle",{
-  top:"325%",
-  left:"10%",
+  top:"320%",
+  left:"13%",
   rotate:"360deg",
 },"page3");
 
