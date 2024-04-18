@@ -135,10 +135,10 @@ body {
     z-index: 3;
 }
 .page1right img{
-    width:45vw;
+    width:70%;
     position:absolute;
-    right:0%;
-    top:3%;
+    right:-10%;
+    top:13%;
     z-index: 5;
     transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
 }
@@ -188,6 +188,7 @@ body {
     border-radius:20px;
 }
 .page2right h1{
+    color:white;
     font-size:3vw;
     font-weight:500;
     font-family: Poppins;
@@ -264,4 +265,5 @@ body {
     font-weight:500;
     line-height: 8vh;
     padding-top: 10vh;
+    color:white;
 }

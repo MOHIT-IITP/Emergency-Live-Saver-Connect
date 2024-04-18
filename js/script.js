@@ -26,14 +26,10 @@ var tl = gsap.timeline({scrollTrigger:{
 tl.to(".page1right img",{
   scaleX:"-1",
   top:"105%",
-  left:"5%",
+  left:"-7%",
 },"page1");
 
-tl.to(".circle",{
-  top:"120%",
-  left:"10%",
-  rotate:"360deg",
-},"page1");
+// animation for the page 3 start here 
 
 var tl2 = gsap.timeline({scrollTrigger:{
   trigger: ".page3",
@@ -45,17 +41,12 @@ var tl2 = gsap.timeline({scrollTrigger:{
 
 tl2.to(".page1right img",{
   transform:"none",
-  // scaleX:"-1",
-  top:"200%",
-  left:"50%",
+  // scaleX:"0",
+  top:"210%",
+  left:"43%",
 },"page2");
 
-tl2.to(".circle",{
-  top:"225%",
-  left:"57%",
-  rotate:"0deg",
-},"page2");
-
+// animation for the page4 start here 
 var tl3 = gsap.timeline({scrollTrigger:{
   trigger:".page4",
   scrub:true,
@@ -66,14 +57,7 @@ var tl3 = gsap.timeline({scrollTrigger:{
 
 tl3.to(".page1right img",{
   scaleX:"-1",
-  top:"300%",
-  left:"7%",
+  top:"310%",
+  left:"-7%",
 },"page3");
-
-tl3.to(".circle",{
-  top:"320%",
-  left:"13%",
-  rotate:"360deg",
-},"page3");
-
 
