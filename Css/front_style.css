@@ -104,11 +104,8 @@ body {
     color:white;
     font-weight: 800;
 }
-.maintitle h1{
-    font-size: 5vw;
-    color:rgb(255, 255, 255);
-}
-.maintitle h1 span{
+
+.maintitle p span{
     font-size: 6vw;
     color:rgb(255, 98, 0);
 }
@@ -160,17 +157,31 @@ body {
 .page2{
     height:100vh;
     width:100%;
-    background-color: #95deda;
+    background:url("../src/hospital\ bg.jpg");
+    background-size: cover;
+    background-position: center;
     display:flex;
     justify-content: space-between;
     flex-wrap:wrap;
     /* padding-left: 15vw; */
     padding-right: 10vw;
+    z-index: 1;
+
+}
+.page2bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    background-color: rgb(117, 211, 255);
+    /* filter:blur(10px); */
+    opacity: 0.8;
 }
 
 .page2left{
     width:30%;
     /* border: 2px solid black; */
+    z-index: 3;
 }
 
 .page2right{
@@ -181,6 +192,7 @@ body {
     justify-content:center;
     align-items:center;
     flex-direction:column;
+    z-index: 3;
 }
 
 .page2right img{
@@ -188,9 +200,8 @@ body {
     border-radius:20px;
 }
 .page2right h1{
-    color:white;
-    font-size:3vw;
-    font-weight:500;
+    font-size:4vw;
+    font-weight:600;
     font-family: Poppins;
     text-align: center;
     line-height: 8vh;
@@ -204,22 +215,34 @@ body {
     position: relative;
     display: flex;
     justify-content: space-between;
-    padding-left: 15vw;
-    padding-right: 15vw;
+    background:url("../src/medicine\ bg.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+.page3 .bg{
+    height:100%;
+    width:100%;
+    position: absolute;
+    background-color: white;
+    opacity:0.8;
+    z-index: 2;
 }
 .page3left{
     width:35vw;
+    height:100%;
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
     font-family: Poppins;
     flex-direction:column;
-    /* border: 2px solid black; */
+    z-index: 3;
+    margin-left: 10vw;
 }
 
 .page3left h1{
-    font-size:3vw;
+    font-size:3.5vw;
     font-weight:500;
     line-height: 8vh;
     padding-top: 10vh;
@@ -239,12 +262,24 @@ body {
     justify-content: center;
     align-items: center;
     font-family: Poppins;
-    background-color: #95deda;
+    background:url("../src/ai\ bg.webp");
+    background-size:cover;
+    background-position: center;
+    z-index: 1;
+}
+.page4 .bg{
+    height:100%;
+    width:100%;
+    position: absolute;
+    background-color: rgb(111, 245, 255);
+    opacity:0.8;
+    z-index: 2;
 }
 .page4left{
     width:35vw;
     height:100%;
     /* border: 2px solid black; */
+    z-index: 3;
 }
 .page4right{
     width:35vw;
@@ -254,6 +289,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    z-index: 3;
 }
 
 .page4right img{
@@ -265,5 +301,68 @@ body {
     font-weight:500;
     line-height: 8vh;
     padding-top: 10vh;
-    color:white;
+    color:black;
+}
+
+
+@media (280px<width<600px) {
+    .page1right img{
+        position: absolute;
+        top:10%;
+        left:5%;
+        width:85vw;
+    }
+    .maintitle p{
+        font-size:8vw;
+        line-height:55px;
+        position: absolute;
+        left:22%;
+    }
+    .Slogan1{
+        font-size:5vw;
+        position: absolute;
+        top:70%;
+        left:20%;
+    }
+    .Slogan2{
+        font-size:4vw;
+        position: absolute;
+        top:75%;
+        left:29%;
+    }
+    .page2right img{
+        position: absolute;
+        left:20%;
+        width:50%;
+    }
+    .page2right h1{
+        font-size:6vw;
+        position: absolute;
+        left:30%;
+        top:160%;
+        z-index: 999999;
+        line-height: 50px;
+    }
+    .page3left img{
+        width:50vw;
+        position: absolute;
+        top:20%;
+    }
+    .page3left h1{
+        font-size:6vw;
+        position: absolute;
+        top:40%;
+    }
+    .page4right img{
+        position: absolute;
+        top:344%;
+        left:27%;
+        width:48vw;
+    }
+    .page4right h1{
+        position: absolute;
+        font-size:6vw;
+        top:360%;
+        left:30%;
+    }
 }

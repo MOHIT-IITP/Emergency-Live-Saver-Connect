@@ -41,7 +41,6 @@ var tl2 = gsap.timeline({scrollTrigger:{
 
 tl2.to(".page1right img",{
   transform:"none",
-  // scaleX:"0",
   top:"210%",
   left:"43%",
 },"page2");
