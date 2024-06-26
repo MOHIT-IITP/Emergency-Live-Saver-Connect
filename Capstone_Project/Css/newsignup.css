@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding:0;
+    margin:0;
+}
+html,body{
+    height:100%;
+    width:100%;
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family:Poppins;
+    background: url(../src/login1.jpg);
+    background-size:130%;
+    min-height:100vh;
+}
+h1{
+    font-size:5rem;
+    color:white;
+    text-align:center;
+    text-shadow: 3px 3px 0px orangered; 
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+h1:hover{
+    text-shadow:8px 8px 0px orangered; 
+}
+
+#form {
+    backdrop-filter: blur(45px);
+    border-radius: 40px;
+    height:600px;
+    width:auto;
+    font-family:Poppins;
+    background: rgba(255, 255, 255, 0.328); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.log{
+    height:50px;
+    width:350px;
+    background: transparent;
+    border:3px solid rgb(255, 255, 255);
+    border-radius: 40px;
+    padding-left: 10px;;
+    color: white;
+    margin:20px;
+}
+input::placeholder {
+    color: black;
+    font-size: 15px;
+}
+
+.btn{
+    height:50px;
+    width:350px;
+    margin:30px;
+    background-color: white;
+    border:3px solid rgb(210, 203, 248);
+    border-radius: 40px;
+    padding-left: 10px;;
+    color: black;
+    font-size:1.5rem;
+    font-weight:600;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.btn:hover{
+    background-color: rgb(229, 200, 255);
+}
+
+.forget{
+    color:white;
+    text-align: center;
+}
+.forget a{
+    color:orangered;
+}

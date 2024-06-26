@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    min-height:100vh;
+    width:100%;
+    background:url("../src/1.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: Poppins;
+    background-attachment: fixed;
+    height:100%;
+}
+.blackbg{
+    background-color: black;
+    height:100%;
+    width:100%;
+    position: fixed;
+    opacity: 0.1;
+    z-index: -99;
+}
+
+.hospital {
+    border: 5px solid white;
+    padding: 10px;
+    margin-bottom: 20px;
+    min-height:400px;
+    width:30%;
+    height:auto;
+    margin:30px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    background-color: rgba(187, 252, 255, 0.689);
+    gap:30px;
+}
+
+#hospital-container{
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hospital-name {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.title{
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.title label{
+    font-size:5rem;
+    font-weight: 600;
+    color:orangered;
+    text-shadow: 3px 3px 0px black;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.title label:hover{
+    text-shadow: 7px 7px 0px black;
+}
+
+.title input{
+    width:300px;
+    padding:20px;
+    border-radius: 40px;
+    border: 3px solid rgb(232, 231, 231);
+    background:rgba(255, 255, 255, 0.338);
+    backdrop-filter: blur(10px);
+}
+
+.title input::placeholder{
+    font-size:1.2rem;
+    color:black;
+}
+.hospital-name{
+    font-size: 1.9rem;
+    font-weight: 400;
+}
+
+.hospital-address{
+    font-size: 1.5rem;
+}
+
+.hospital-phone{
+    font-size: 1.5rem;
+    color:orangered;
+}
+.hospital-website{
+    color:blueviolet;
+}
+.show-map-button{
+    padding:20px;
+    border-radius: 30px;
+    font-family: Poppins;
+    background:rgba(255, 255, 255, 0.445);
+    backdrop-filter: blur(10px);
+}
+
+/* nav */
+.navbar{
+    z-index: 99999;
+    position: fixed;
+    width:100%;
+    background-color: rgba(255, 255, 255, 0.604);
+    backdrop-filter: blur(60px);
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1) ;
+    font-family:Poppins;
+    margin-bottom: 2rem;
+  }
+  .navbar img{
+    margin:1rem;
+  }
+  .navbar ul{
+    list-style: none;
+    align-items: center;
+  }
+  .normal {
+    display: flex;
+  }
+  .navbar li{
+    height:50px;
+  }
+  .navbar a{
+    height:100%;
+    padding:0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+  }
+  .navbar a:hover{
+    background-color: #f0f0f0;
+  }
+  /* .navbar li:first-child{
+    margin-right: auto;
+    font-weight:600;
+    font-size:1.5rem;
+  } */
+  
+  .sidebar{
+    z-index: 99999999 !important;
+    position: fixed;
+    top:0;
+    right:0;
+    height:100vh;
+    width:250px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: rgba(255, 255, 255, 0.559);
+    box-shadow: -10px 0px 10px rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  .sidebar ul{
+    z-index: 99;
+  }
+  
+  .sidebar li{
+    width:100%;
+    z-index: 99;
+  }
+  
+  .sidebar a{
+    width:100%;
+    z-index: 99;
+  }
+.navlist{
+  display: flex;
+  gap: 1rem;
+}
+.normal{
+  display: flex;
+  justify-content: space-between;
+}
+@media(280px<width<812px){
+  .normal li{
+      display:none;
+  }
+  .normal li:first-child,
+  .normal .svg-container {
+      display: block;
+  }
+}

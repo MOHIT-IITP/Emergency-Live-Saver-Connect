@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    min-height:100vh;
+    width:100%;
+    background:url("../src/3D\ Map\ View.jpg");
+    background-size:cover; 
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Poppins;
+    z-index: -10;
+}
+.blackbg{
+    background-color: black;
+    height:100%;
+    width:100%;
+    position: fixed;
+    opacity: 0.1;
+    z-index: -99;
+}
+
+.hospital {
+    padding: 20px;
+    position: relative;
+    height:auto;
+    width:auto;
+    margin:30px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    backdrop-filter: blur(45px);
+    background-color: rgba(214, 229, 255, 0.433);
+    gap:15px;
+    z-index: 99;
+}
+
+#hospital-container{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-around;
+    z-index: 99;
+}
+
+
+.title{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:130px;
+}
+
+.title label{
+    font-size:5rem;
+    font-weight: 600;
+    color:rgb(172, 163, 253);
+    text-shadow: 3px 3px 0px black;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.title label:hover{
+    text-shadow: 7px 7px 0px rgb(32, 32, 32);
+}
+
+.title input{
+    width:300px;
+    padding:20px;
+    border-radius: 40px;
+    border: 3px solid rgb(232, 231, 231);
+    background:rgba(255, 255, 255, 0.338);
+    backdrop-filter: blur(10px);
+}
+
+.title input::placeholder{
+    font-size:1.2rem;
+    color:black;
+}
+
+
+.hospital-name{
+    font-size: 1.9rem;
+    font-weight: 400;
+    color:black;
+    width:25vw;
+    filter: drop-shadow(3px 3px 0px white);
+}
+
+.hospital-address{
+    font-size: 1.5rem;
+    width:23vw;
+}
+
+.hospital-phone{
+    font-size: 1.5rem;
+    color:orangered;
+}
+.hospital-website{
+    color:blueviolet;
+}
+.hospital-treatment{
+    width:25vw;
+    height:10vh;
+    overflow: auto;
+    color: black;
+}
+@media(280px<width<812px){
+  .normal li{
+      display:none;
+  }
+  .normal li:first-child,
+  .normal .svg-container {
+      display: block;
+  }
+}
+.show-map-button{
+    padding:20px;
+    border-radius: 30px;
+    width:60%;
+    font-family: Poppins;
+    background:rgba(255, 255, 255, 0.445);
+    border: 3px solid white;
+}
+
+.hospital-image{
+    height:250px;
+    width:380px;
+    border-radius: 10px;
+  }
+  
+  
+  /* working on the navbar */
+  .navbar{
+    z-index: 99999;
+    position: fixed;
+    width:100%;
+    background-color: rgba(255, 255, 255, 0.604);
+    backdrop-filter: blur(60px);
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1) ;
+    font-family:Poppins;
+  }
+  
+  .navbar ul{
+    list-style: none;
+    align-items: center;
+  }
+  .normal {
+    display: flex;
+  }
+  .navbar li{
+    height:50px;
+  }
+  .navbar a{
+    height:100%;
+    padding:0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+  }
+  .navbar a:hover{
+    background-color: #f0f0f0;
+  }
+  .navbar li:first-child{
+    margin-right: auto;
+    font-weight:600;
+    font-size:1.5rem;
+  }
+  
+  .sidebar{
+    z-index: 99999999 !important;
+    position: fixed;
+    top:0;
+    right:0;
+    height:100vh;
+    width:250px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: rgba(255, 255, 255, 0.559);
+    box-shadow: -10px 0px 10px rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  .sidebar ul{
+    z-index: 99;
+  }
+  
+  .sidebar li{
+    width:100%;
+    z-index: 99;
+  }
+  
+  .sidebar a{
+    width:100%;
+    z-index: 99;
+  }
+  

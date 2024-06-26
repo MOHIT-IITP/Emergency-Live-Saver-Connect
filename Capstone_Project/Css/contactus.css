@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding:0;
+    margin:0;
+}
+html,body{
+    height:100%;
+    width:100%;
+}
+
+body{
+    height:100vh;
+    width:100%;
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    font-family: Poppins;
+    background: url(../src/Elegant\ Holographic\ Background.jpg);
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: blur(40px);
+}
+
+#formBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:700px;
+    width:900px;
+    gap:30px;
+    margin-left: 100px;
+}
+
+#nameBox{
+    height:50px;
+    width:40%;
+    background-color: whitesmoke;
+    border: 3px solid whitesmoke;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+#nameBox::placeholder{
+    font-size:1.2rem;
+    color:black;
+}
+
+#emailBox::placeholder{
+    font-size:1.2rem;
+    color:black;
+}
+#messageBox::placeholder{
+    font-size:1.2rem;
+    color:black;
+    padding-left: 100px;
+    margin-left: 100px;
+}
+#emailBox{
+    padding-left: 20px;
+    height:50px;
+    width:40%;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    border: 3px solid whitesmoke;
+}
+
+#messageBox{
+    height:140px;
+    width:40%;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    padding-left: 20px;
+    padding-top: 20px;
+    border: 3px solid whitesmoke;
+}
+#btn{
+    height:50px;
+    width:40%;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    background-color: whitesmoke;
+    border: 3px solid whitesmoke;
+}
+#btn:hover{
+    background-color: rgb(189,203,255);
+    border: 3px solid rgb(197, 181, 255);
+}
+
+h1{
+    font-size: 4rem;
+    color:rgb(189, 203, 255);
+    text-shadow: 3px 3px 0px black;
+}
+.imageContact{
+    position: absolute;
+    height:80vh;
+    right: 0;
+    top:10%;
+    transform: scaleX(-1);
+}
