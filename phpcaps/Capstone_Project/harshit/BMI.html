@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>BMI</title>
+    <link rel="stylesheet" href="BMI.css">
+</head>
+<body>
+    <img class="icon"  src="bmiicon.ico">
+    <img class="image"  src="bmiimg1.jpg">
+    <img class="image1"  src="bmiimage3.jpg">
+
+    <h2 class=BMI_head>
+
+    Body Mass Index (BMI)
+    
+    </h2>
+    <h3 class="about_bmi">
+        Body Mass Index (BMI) is a measurement of a person’s
+        <br>
+         weight with respect to his or her height. It is more 
+         of an <br>
+         indicator than a direct measurement of a person’s total 
+         <br>body fat.
+    </h3>
+    
+    <div class="v_line">
+
+    </div>
+
+    <div class="main">
+        <div class="Weight">
+            <label for="weight"> WEIGHT (KG):</label>
+            <input type="number" id="weight"> 
+            
+        </div>
+    
+        <div class="Height">
+            <label for="height">HEIGHT (M):</label>
+            <input type="number" id="height">
+        </div>
+
+        <div class="Button">
+            
+            <button onclick="calculateBMI()"> Calculate BMI</button>
+
+            <div class = Result>
+                <p id="result"></p>
+            </class>
+        </div>
+      
+    </div>
+    <div class="result_border">
+        
+    </div>
+<div class="QuickPanel">
+    
+    <a href="../Html/front.php" id="home">Home</a>
+    <a href="../Html/hospital.html" id="Hospital">Hospital</a>
+    <a href="Ambulance.html" id="Ambulance">Ambulance </a>
+    <a href="BB.html" id="BloodBank">Blood Bank</a>
+    <a  href="../Html/labo.html"  id="Laboratory">Laboratory</a>
+    <a  href="../Html/medicine.html"  id="MedicalStore">Medical Store</a>
+    <a  href="../Html/diet.html"  id="DietPlan" >Diet Plan</a>
+    <a href="BMR.html" id="BMR">BMR </a>
+    <a href="HRS.html" id="HRS">Hydration Reminder</a>
+    <a  href="weather.html"  id="Weather" >Weather</a>
+    <a  href="../Html/about.html"  id="About" >About</a>
+    
+</div>
+
+
+    <script src="BMI.js"></script>
+</body>
+</html>

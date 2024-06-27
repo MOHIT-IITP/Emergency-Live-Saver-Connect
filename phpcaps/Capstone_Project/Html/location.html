@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Css/Location.css">
+</head>
+<body>
+    <!-- <div class="blackbg"></div> -->
+    <div class="navbar">
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="../Html/hospital.html">Hospital+</a></li>
+            <li><a href="../Html/location.html">Location</a></li>
+            <li><a href="../Html/diet.html">Diet Plan</a></li>
+            <li><a href="../Html/medicine.html">MedicineStore</a></li>
+            <li><a href="../harshit/chatbot.html"> Medicine Assitance</a></li>
+            <li><a href="../harshit/BMR.html">Basal Metabolic Rate(BMR)</a></li>
+            <li><a href="../harshit/BMI.html">Body Mass Index(BMI)</a></li>
+            <li><a href="../Html/labo.html">Laboratory Store</a></li>
+            <li><a href="../Html/hello.html">About</a></li>
+            <li><a href="../Html/ayus.html">Ayushman affiliated hosp</a></li>
+            <li><a href="../Html/contactUs.html">Contact Us</a></li>
+        </ul>
+        <ul class="normal">
+            <li><a href="../Html/front.php">ELSC+</a></li>
+            <li><a href="../Html/hospital.html">Hospital+</a></li>
+            <li><a href="../Html/location.html">Location</a></li>
+            <li><a href="../Html/diet.html">Diet Plan</a></li>
+            <li><a href="../Html/medicine.html">Medicinestore</a></li>
+            <div class="div-container" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></div>
+        </ul>
+    </div>
+    <div class="title">
+        <label  for="location">Enter Location</label>
+        <input type="text" id="location" placeholder="Enter location...">
+    </div>
+
+    <div class="main">
+    </div>
+    <div id="hospital-container"></div>
+    <script src="../js/location.js"></script>
+
+</body>
+</html>

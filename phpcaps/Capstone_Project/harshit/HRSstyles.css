@@ -1,0 +1,97 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding-top: 50px;
+    background-image: url(img2.png);
+
+  }
+  #home{
+    position:absolute;
+    margin-top: -40px;
+    margin-left:  -660px;
+    border: 2px solid black;
+    background-color: aqua;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch:extra-expanded;
+    color: black;
+    
+  }
+  
+  #app {
+    margin: auto;
+    width: 80%;
+  }
+  
+ 
+  
+#image1{
+    position: absolute;
+    z-index: -1;
+    margin-top: -57px;
+    margin-left: -7px;
+}
+#image2{
+    position: absolute;
+    z-index: -1;
+    margin-top: -38px;
+    margin-left: 700px;
+    
+}
+
+  .controls {
+    margin-bottom: 20px;
+  }
+  
+  label, select, button {
+    margin-right: 10px;
+   
+  }
+  #toggleReminder{
+    position:absolute;
+    font-size: 18px;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 5px solid rgba(5, 69, 94, 0.651);
+    margin-top: 300px;
+    margin-left: 197px;
+    border-radius: 100px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: rgb(67, 223, 223);
+  }
+  #gender{
+    position: absolute;
+    font-size: 18px;
+    border: 5px solid rgba(5, 69, 94, 0.651);
+    margin-top: 230px;
+    margin-left: 295px;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+    background-color: rgb(67, 223, 223);
+  }
+  #Gender{
+    position: absolute;
+    font-size: 18px;
+    
+    background-color: rgb(4, 235, 235);
+    margin-top: 230px;
+    margin-left: 154px;
+    border-radius: 10px;
+    border: 5px solid rgba(5, 69, 94, 0.651);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+  

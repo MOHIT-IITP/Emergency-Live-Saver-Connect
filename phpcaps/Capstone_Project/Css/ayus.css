@@ -1,0 +1,16 @@
+
+.box{
+    background-color: rgb(225, 238, 232);
+    height: 200x;
+    width: 33%;
+}
+#container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.box{
+    margin-top: 20px;
+    border-radius: 20px;
+}
