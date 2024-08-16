@@ -439,7 +439,7 @@ const hospitals = [
     }
     
 
-    
+// owner of the project MOHIT-IITP  
 
 
 ];
@@ -505,7 +505,7 @@ function displayHospitals() {
         });
     });
 }
-
+// This project is created by MOHIT_IITP
 // Event listener for location input field
 const locationInput = document.getElementById("location");
 locationInput.addEventListener("input", function() {
