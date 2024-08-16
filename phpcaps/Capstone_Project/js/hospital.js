@@ -446,7 +446,7 @@ navigator.geolocation.getCurrentPosition(function(position) {
         }
         
 
-        
+    // owner of the project MOHIT-IITP 
 
 
     ];
@@ -485,7 +485,7 @@ nearbyHospitals.forEach(function(hospital, index) {
     `;
     hospitalList.appendChild(listItem);
 });
-
+// this project is created by MOHIT-IITP
 // Add event listeners to show/hide map buttons
 var showMapButtons = document.querySelectorAll('.show-map-btn');
 showMapButtons.forEach(function(button) {
