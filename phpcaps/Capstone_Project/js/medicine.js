@@ -166,6 +166,7 @@ const hospitals = [
         
     },
 ]
+// this project is created by MOHIT-IITP
 function displayHospitalsByLocation(searchLocation) {
     const filteredHospitals = hospitals.filter(hospital => {
         return hospital.address.toLowerCase().includes(searchLocation.toLowerCase());
@@ -234,7 +235,7 @@ locationInput.addEventListener("input", function() {
         displayHospitals();
     }
 });
-
+// owner of this repo MOHIT-IITP
 // Call the function to display all hospitals when the page loads
 window.onload = displayHospitals;
 
